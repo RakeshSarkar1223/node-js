@@ -22,9 +22,15 @@ app.get('/profile', (req, res) => {
         name: 'Rakesh Sarkar',
         city: 'Kolkata',
         country: 'India',
-        email: 'rakeshitju28@gmail.com'
+        email: 'rakeshitju28@gmail.com',
+        skills : ['HTML', 'CSS', 'JavaScript', 'Node.js']
     };
     res.render('profile', { user });
+});
+
+//Login Page
+app.get('/login',(req,res)=>{
+    res.render('login');
 });
 
 // 404 route
